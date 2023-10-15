@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navLinks = [
     {
@@ -6,7 +6,7 @@ const navLinks = [
         display: 'Home'
     },
     {
-        path: '#',
+        path: '/about',
         display: 'About'
     },
     {
@@ -43,9 +43,12 @@ const Header = () => {
                     {
                         navLinks.map((nav, i) => (
                             <li key={i}  >
-                                <Link to={nav.path}>
+                                <NavLink
+                                    to={nav.path}
+                                    className={({ isActive }) => isActive ? 'bg-red-400' : ''}
+                                >
                                     {nav.display}
-                                </Link>
+                                </NavLink>
                             </li>
                         ))
                     }

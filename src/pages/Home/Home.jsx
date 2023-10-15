@@ -1,10 +1,13 @@
+import HeroSection from "../../Shared/HeroSection";
+import Marque from "../../Shared/Marque";
 
 
 const Home = () => {
     return (
-        <div>
-            <h2>Home</h2>
-        </div>
+        <>
+            <HeroSection />
+            <Marque />
+        </>
     );
 };
 
