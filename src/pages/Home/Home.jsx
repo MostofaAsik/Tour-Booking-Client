@@ -1,5 +1,6 @@
 import HeroSection from "../../Shared/HeroSection";
 import Marque from "../../Shared/Marque";
+import SearchBar from "../../Shared/SearchBar";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <HeroSection />
             <Marque />
+            <SearchBar />
         </>
     );
 };

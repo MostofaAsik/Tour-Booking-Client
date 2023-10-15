@@ -36,7 +36,7 @@ const Header = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Tour Booking</a>
+                <a className="btn btn-ghost normal-case text-xl text-orange-500">Tour Booking</a>
             </div>
             <div className="navbar-center hidden md:flex md:gap-3">
                 <ul className="menu menu-horizontal px-1 md:flex md:gap-3">
@@ -45,7 +45,7 @@ const Header = () => {
                             <li key={i}  >
                                 <NavLink
                                     to={nav.path}
-                                    className={({ isActive }) => isActive ? 'bg-red-400' : ''}
+                                    className={({ isActive }) => isActive ? 'bg-lime-400' : ''}
                                 >
                                     {nav.display}
                                 </NavLink>
@@ -73,7 +73,7 @@ const Header = () => {
                             </ul>
                         </div> :
                         <Link to='signin'>
-                            <button className="btn">SignIn</button>
+                            <button className="bg-orange-500 rounded-lg p-1">SignIn</button>
                         </Link>
 
                 }
